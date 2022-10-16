@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	background-color: rgb(217, 85, 29);
+	z-index: 100;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header__menu {
+	padding-left: 970px;
+}
+
+.menu {
+	font-size: 0;
+}
+
+.menu__item {
+	position: relative;
+	display: inline-block;
+	text-align: right;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 15px;
+}
+
+.menu__item:hover .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+.menu__link {
+	font-size: 20px;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 0;
+}
+
+.sub-menu {
+	color: #fff;
+	background-color: green;
+	padding: 15px;
+	position: absolute;
+	top: 130%;
+	left: 0;
+	min-width: 120px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+}
+
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.sub-menu__link {
+	font-size: 16px;
+}
+
+.maldives {
+	background: url("../img/maldives.jpg") 0 0 / cover no-repeat;
+	height: 800px;
+	width: 100%;
+}
+
+.desert {
+	background: url("../img/desert.jpg") 0 0 / cover no-repeat;
+	height: 800px;
+	width: 100%;
+}
+
+.desert__image {
+	position: relative;
+	top: 330px;
+	left: 600px;
+}
+
+.desert__image img {
+	width: 150px;
+}
+
+.ukraine {
+	background: url("../img/ukraine.jpg") 0 0 / cover no-repeat;
+	height: 900px;
+	width: 100%;
+	padding-left: 120px;
+	padding-top: 200px;
+}
+
+.ukraine__image img {
+	width: 40px;
+}
+
+.ukraine__image {
+	position: sticky;
+	top: 70px;
+}
+
+.forest {
+	background: url("../img/forest.jpg") 0 0 / cover no-repeat;
+	height: 800px;
+	width: 100%;
+}
+
+.game {
+	background: url("../img/road.png") 0 0 / auto 100% repeat-x;
+	height: 700px;
+	width: 300%;
+	position: relative;
+}
+
+.game__title {
+	font-size: 40px;
+	font-weight: 700;
+	color: rgb(217, 85, 29);
+	text-shadow: 0 0 10px #000;
+	padding-top: 250px;
+	padding-left: 100px;
+	margin-bottom: 20px;
+}
+
+.game__subtitle {
+	font-size: 20px;
+	color: #eee;
+	text-shadow: 0 0 10px #000;
+	padding-left: 100px;
+}
+
+.game__subtitle--margin {
+	margin-bottom: 5px;
+}
+
+.game__hello-image img {
+	width: 180px;
+	position: absolute;
+	top: 50%;
+	left: 80%;
+}
+
+.game__car-image img {
+	width: 420px;
+	position: absolute;
+	top: 55%;
+	left: 83%;
+}
+
+.car__image {
+	position: fixed;
+	top: 74%;
+	left: 10%;
+}
