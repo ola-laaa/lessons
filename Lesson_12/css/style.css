@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap');
+
+body {
+	font-family: Andika, sans-serif;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 1000px;
+	background: url(../img/room.jpg) 0 0 / cover no-repeat;
+}
+
+.header {
+	padding: 15px 520px;
+	position: fixed;
+	z-index: 100;
+}
+
+.header__title {
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 5px 5px 20px firebrick;
+}
+
+.page {}
+
+.girl {}
+
+.button {
+	display: inline-block;
+	height: 36px;
+	padding: 10px;
+	background-color: firebrick;
+	color: #fff;
+	border-radius: 10px;
+	outline: 2px dashed #fff;
+}
+
+.button--1 {
+	position: absolute;
+	top: 260px;
+	left: 1130px;
+}
+
+.girl__image {
+	position: absolute;
+	top: 300px;
+	left: 1050px;
+}
+
+.girl__image img {
+	width: 400px;
+}
+
+.girl__image:target img {
+	transform: scale(0.75);
+	transition: all 0.3s ease 0s;
+}
+
+.poster {}
+
+.button--2 {
+	position: absolute;
+	top: 310px;
+	left: 160px;
+}
+
+.poster__image {
+	position: absolute;
+	top: 100px;
+	left: 155px;
+	perspective: 400px;
+}
+
+.poster__image img {
+	width: 130px;
+	transform: rotateY(-10deg) rotate(10deg);
+	transform-origin: 0 center;
+}
+
+.poster__image:target img {
+	transform: rotateY(-10deg) rotate(0deg);
+	transition: all 0.3s ease 0s;
+}
+
+.letter {}
+
+.button--3 {
+	position: absolute;
+	top: 925px;
+	left: 710px;
+}
+
+.letter__image {
+	position: absolute;
+	top: 900px;
+	left: 600px;
+	perspective: 400px;
+}
+
+.letter__image img {
+	width: 80px;
+	transform: rotateX(50deg) rotate(-20deg);
+}
+
+.letter__image:target img {
+	transform: translate(-400px, -120px) rotateX(35deg) rotate(20deg);
+	transition: all 0.3s ease 0s;
+}
+
+.footer {}
