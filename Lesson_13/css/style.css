@@ -1,0 +1,137 @@
+@font-face {
+	font-family: Forrest;
+	src: url(../fonts/Forrest.woff2), url(../fonts/Forrest.woff);
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: Forrest;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.corridor {
+	height: 800px;
+	background: url(../img/corridor.jpg) 0 0 / cover no-repeat;
+}
+
+.girl img {
+	width: 400px;
+}
+
+.girl {
+	position: absolute;
+	top: 80px;
+	left: 200px;
+	z-index: 1;
+	animation: walking-girl 5s linear forwards;
+}
+
+@keyframes walking-girl {
+	0% {
+		transform: translate(0) scale(1);
+	}
+
+	100% {
+		transform: translate(670px, -90px) scale(0.175);
+	}
+}
+
+.bats img {
+	width: 350px;
+}
+
+.bats {
+	position: absolute;
+	top: 400px;
+	left: -350px;
+	z-index: 2;
+	animation: flying-bats 1.5s linear 2.5s forwards;
+}
+
+@keyframes flying-bats {
+	0% {
+		transform: translate(0);
+	}
+
+	100% {
+		transform: translate(2000px, 0);
+	}
+}
+
+.pumpkin img {
+	width: 160px;
+}
+
+.pumpkin {
+	position: absolute;
+	top: 900px;
+	left: 1090px;
+	animation: pumpkin-appear 1s linear 1s forwards;
+}
+
+@keyframes pumpkin-appear {
+	0% {
+		transform: translate(0);
+	}
+
+	100% {
+		transform: translate(0, -300px);
+	}
+}
+
+.look {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 45px;
+	text-shadow: 0 0 20px #000;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 340px;
+	left: 970px;
+	z-index: 0;
+	animation: look-appear 1s linear 5s forwards;
+	transition: color 0.2s ease;
+}
+
+.look:hover {
+	color: rgb(177, 177, 177);
+}
+
+@keyframes look-appear {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.screamer img {
+	height: 0px;
+	width: 0;
+	transition: all 0.3s linear 2s;
+}
+
+.screamer {
+	position: absolute;
+	top: 15px;
+	left: 654px;
+	z-index: 10;
+}
+
+.screamer:target img {
+	height: 700px;
+	width: 700px;
+	transform: rotate(360deg);
+}
