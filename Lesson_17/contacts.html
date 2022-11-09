@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_17</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="" class="menu__link">About</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Courses</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Events</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Blog</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html" class="menu__link">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions actions-header">
+					<a href="" class="actions-header__button button"><span>Get consultation</span></a>
+					<a href="" class="actions-header__auth"><span>Log in / Register</span></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__questions any-questions">
+				<div class="any-questions__container">
+					<div class="any-questions__media">
+						<img src="img/contacts/illustration.svg" alt="Illustration of a girl in headphones looking at some notes" class="any-questions__image">
+					</div>
+					<div class="any-questions__content content-form">
+						<div class="content-form__text">
+							<h3 class="content-form__subtitle subtitle">Any questions?</h3>
+							<h2 class="content-form__title title">Drop us a line</h2>
+						</div>
+						<form action="#" class="content-form__form form">
+							<div class="form__line">
+								<label for="first-name" class="form__label">First Name*</label>
+								<input id="first-name" name="first-name" placeholder="Your first name" type="text" class="form__input" required>
+							</div>
+							<div class="form__line">
+								<label for="last-name" class="form__label">Last Name*</label>
+								<input id="last-name" name="last-name" placeholder="Your last name" type="text" class="form__input" required>
+							</div>
+							<div class="form__line">
+								<label for="email" class="form__label">Email*</label>
+								<input id="email" name="email" placeholder="Your working email" type="email" class="form__input" required>
+							</div>
+							<div class="form__line">
+								<label for="phone" class="form__label">Phone</label>
+								<input id="phone" name="phone" placeholder="Your phone number" type="tel" class="form__input">
+							</div>
+							<div class="form__line form__line--message">
+								<label for="message" class="form__label">Message*</label>
+								<textarea name="message" id="message" placeholder="Your message" class="form__textarea"></textarea>
+							</div>
+							<div class="form__line form__line--radio">
+								<label class="form__label form__label--radio">Callback</label>
+								<input id="radio1" name="radio" type="radio" value="yes" class="form__radio" required>
+								<label for="radio1" class="form__label form__label--radio-select">Yes</label>
+								<input id="radio2" name="radio" type="radio" value="no" class="form__radio" required>
+								<label for="radio2" class="form__label form__label--radio-select">No</label>
+							</div>
+							<div class="form__line form__line--checkbox">
+								<input id="agreement" name="agreement" type="checkbox" value="yes" class="form__input" checked required>
+								<label for="agreement" class="form__label form__label--checkbox">I agree to receive communications from Createx Online School</label>
+							</div>
+							<div class="form__line form__line--button">
+								<button class="form__submit button"><span>Send message</span></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
