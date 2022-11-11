@@ -1,0 +1,134 @@
+/* Кнопка помаранчева */
+.button{
+	border-radius: 4px;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #fff;
+	display: inline-block;
+	padding: 16px 40px;
+	position: relative;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	
+}
+.button span{
+	position: relative;
+	z-index: 2;
+}
+.button::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: opacity 0.3s ease 0s;
+	opacity: 0;
+	border-radius: 4px;
+	background: linear-gradient(55.95deg, #ca3530 0%, #c94d05 100%);
+}
+.button:hover::before {
+	opacity: 1;
+}
+/* Кнопка з границею */
+.button--border{
+	background: transparent;
+	position: relative;
+	border: 1px solid #FF3F3A;
+	color:#FF3F3A;
+	padding: 15px 40px;
+	transition: all 0.3s ease 0s;
+}
+.button--border:hover{	
+	color: #fff;
+	border: 1px solid #FF3F3A;
+	background-color: #FF3F3A;
+}
+/* Підзаголовок */
+.subtitle {
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+}
+/* Заголовок */
+.title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+}
+/* Карточка курсу на головній */
+.course-main {
+	display: grid;
+	grid-template-columns: 35.6% 1fr;
+	gap: 32px;
+	border: 1px solid #E5E8ED;
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	border-radius: 4px;
+	padding-right: 10px;
+}
+.course-main:hover {
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+.course-main__pic {
+	position: relative;
+	padding-bottom: 100%;
+}
+.course-main__pic img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 4px 0px 0px 4px;
+	max-height: 214px;
+}
+.course-main__text {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: flex-start;
+	padding-top: 32px;
+}
+.course-main__caterogy {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 150%;
+	color: #FFFFFF;
+	background: #03CEA4;
+	border-radius: 4px;
+	padding: 1px 8px;
+}
+.course-main__name {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+}
+.course-main__value {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	align-self: stretch;
+}
+.course-main__price {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 150%;
+	color: #FF4242;
+}
+.courses-main__divider {
+	background-color: #787A80;
+	flex: 0 0 1px;
+	height: 16px;
+}
+.course-main__author {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 150%;
+	color: #787A80;
+}
